@@ -3,7 +3,7 @@
 set -e
 
 # install os dependencies
-apk add --no-cache gcc libxml2-dev libxslt-dev
+apk add --no-cache gcc libxml2-dev libxslt-dev musl-dev
 
 # build
 pip wheel --no-deps --requirement requirements.txt
